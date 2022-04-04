@@ -1,0 +1,24 @@
+.container.tag-details {
+    margin-bottom: 100%;
+}
+.tag-content {
+    display: inline-flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    padding-left: 6px;
+}
+.tags {
+    padding: 4px 25px;
+    margin: 5px 4px;
+    font-size: 16px;
+    color: #354151;
+    height: max-content;
+    display: flex;
+    border: 1px solid #edeff5;
+    border-radius: 4px;
+    text-align: center;
+}
+hr {
+    color: #f4f5f9;
+    opacity: .3;
+}

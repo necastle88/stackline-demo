@@ -1,5 +1,6 @@
 import React from "react";
 import '../aside/aside.css'
+import Tags from "../tags/Tags";
 
 const Aside  = () => {
     const data = {
@@ -17,6 +18,7 @@ const Aside  = () => {
                     <p className="product-subheading">{data.subtitle}</p>
                 </div>
             </div>
+            <Tags />
         </aside>
     );
 }
