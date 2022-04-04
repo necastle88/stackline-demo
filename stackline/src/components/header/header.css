@@ -1,13 +1,10 @@
 header {
+    height: 20px;
     padding: 24px 0 24px 32px;
     margin-bottom: 64px;
     display: flex;
     flex-direction: row;
-    align-items: left;
     justify-content: left;
     background-color: #052849;
 }
 
-.logo {
-    width: 10em;
-}

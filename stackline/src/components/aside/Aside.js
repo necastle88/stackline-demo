@@ -1,5 +1,5 @@
 import React from "react";
-import '../aside/aside.css'
+import '../aside/aside.css';
 import Tags from "../tags/Tags";
 
 const Aside  = () => {
