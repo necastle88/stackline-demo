@@ -1,3 +1,22 @@
+.container.layout {
+    margin: 0 4% 0 32px;
+}
 .layout {
-    display: flex;
+    display: grid;
+    grid-template-columns: 20% 60% 20%;
+    grid-template-rows: auto auto auto;
+    row-gap: 64px;
+    column-gap: 64px;
+    grid-template-areas:
+        "aside chart ."
+        "aside table .";
+}
+aside {
+    grid-area: aside;
+}
+.chart {
+    grid-area: chart;
+}
+.table-container {
+    grid-area: table;
 }

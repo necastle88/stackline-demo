@@ -1,8 +1,10 @@
-import { configureStore } from '@reduxjs/toolkit';
-import counterReducer from '../features/counter/counterSlice';
+import { createStore, applyMiddleware } from 'redux';
+import thunkMiddleware from 'redux-thunk';
+import { composeWithDevTools } from 'redux-devtools-extension';
+import rootReducer from '../components/chart/chartSlice';
 
-export const store = configureStore({
-  reducer: {
-    counter: counterReducer,
-  },
-});
+const composedEnhancer = composeWithDevTools(applyMiddleware(thunkMiddleware));
+
+// The store now has the ability to accept thunk functions in `dispatch`
+const store = createStore(rootReducer, composedEnhancer);
+export default store;

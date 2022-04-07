@@ -1,21 +1,17 @@
 import React from "react";
-import '../aside/aside.css';
+import { useSelector } from "react-redux";
 import Tags from "../tags/Tags";
+import '../aside/aside.css';
 
 const Aside  = () => {
-    const data = {
-        "title": "Shark Ninja",
-        "image": "https://images-na.ssl-images-amazon.com/images/I/51h-a5IaHeL.jpg",
-        "subtitle": "Magic Bullet NutriBullet 12-Piece High-Speed Blender/Mixer System",
-        "brand": "Nutribullet"
-    }
+    const salesDetails = useSelector(data => data?.[0]);
     return(
         <aside>
             <div className="container product-details">
-                <img src={data.image} alt={`${data.brand} ${data.title}`} className="product-image" />
+                <img src={salesDetails?.image} alt={`${salesDetails?.brand} ${salesDetails?.title}`} className="product-image" />
                 <div className="product-info">
-                    <h2 className="product-title">{data.title}</h2>
-                    <p className="product-subheading">{data.subtitle}</p>
+                    <h2 className="product-title">{salesDetails?.title}</h2>
+                    <p className="product-subheading">{salesDetails?.subtitle}</p>
                 </div>
             </div>
             <Tags />

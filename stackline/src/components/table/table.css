@@ -1,8 +1,17 @@
-.chart {
+.table-container {
     width: 100%;
     display: flex;
     padding: 24px;
     flex-direction: column;
     border-radius: 4px;
 	box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2) ;
+}
+thead {
+    color: #6e7e99;
+}
+th {
+    text-align: inherit;
+}
+tr {
+    color: #6e7e99;
 }
